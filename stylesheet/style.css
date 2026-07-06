@@ -1,0 +1,29 @@
+p{
+    color:blue
+}
+h1{
+    font-size: 50px;
+    color: violet;
+}
+
+a:link{
+    color:rgb(150, 255, 127);
+    text-decoration: none;
+}
+
+a:visited{
+    color:orange;
+}
+
+a:hover{
+    color:rgb(151, 95, 10);
+}
+
+a:active{
+    color:darkred;
+}
+
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
