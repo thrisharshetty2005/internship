@@ -132,6 +132,7 @@ console.log(person.firstname);
 const cars=["BMW","Volvo","Saab"];  //Array Data Type
 
 console.log(cars);//printing the array
+
 //Accessing the array elements
 console.log(cars[0]);
 console.log(cars[5]);
@@ -144,6 +145,101 @@ for (let i=0;i<cars.length;i++){  //printing the values using for loop
 //const date=new Date("2026-07-08");
 const date=new Date();
 console.log(date);
+
+
+//function without parameter
+function great(){
+   console.log("Welcome")
+}
+great();
+
+//function with parameter
+function add(a,b){
+   console.log(a+b);
+}
+add(10,20);
+
+//function with return value
+function multiply(a,b){
+   return a*b;
+}
+let result=multiply(5,4);
+console.log(result)
+
+//Anonymous function
+let message=function(){
+   console.log("Hello Students");
+};
+message();
+
+//Arrow function
+const addition=(a,b)=>{
+   console.log(a+b);
+};
+addition(30,40)
+
+//local Scope
+let college="ABC College";
+
+const student=()=>{
+   let name="Tine";
+   console.log(name);
+};
+student();
+//console.log(name); //error
+
+const carss=["bwm","kia","volvo"]
+console.log(carss);
+
+//join method
+console.log(cars.join("cars"));
+
+//pop() method
+console.log(cars.pop());
+
+//push() method
+console.log(cars.push("suzuki"));
+console.log(cars);
+
+//switch statement
+ let days="monday";
+ switch(days){
+   case "monday":
+      console.log("today is monday");
+      break;
+      case "tuesday":
+         console.log("today is tuesday");
+         break;
+      case "wednesday":
+         console.log("today is wednesday");
+         break;
+      case "thursday":
+         console.log("today is thursday");
+         break;
+      default:
+         console.log("No Date found");
+         break;
+
+ }
+
+//email redex
+ const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+//password regex
+ const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+//phone regex
+ const phoneRegex = /^[6-9]\d{9}$/;
+
+ let word="hello world";
+ console.log(word);
+ 
+ //search method
+ console.log(word.search("w"));
+
+ //replace method
+ console.log(word.replace("world","goodmoening"))
+
 
 
 
