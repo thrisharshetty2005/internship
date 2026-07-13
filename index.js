@@ -241,6 +241,87 @@ console.log(cars);
  console.log(word.replace("world","goodmoening"))
 
 
+ try{
+   console.log("Hello")
+ }catch(error){
+   console.log("this is error",error);
+ }
+
+ let myArray=['Apple','banana','orange'];
+
+ //myArray.app(()=>{});  Syntax
+ myArray.map((item)=> {
+   console.log(item);
+ });
+
+
+ let numbers=[1,2,3,4];
+ let[one,two,three,four]=numbers;
+ console.log(one,two,three,four);
+ console.log(one,four);
+
+ //Object Destructuring
+
+ let persons={namee:"Dinesh",aage:25,job:"SDE"};
+ let{namee,aage,job}=persons;
+ //console.log(namee,aage,100)
+ console.log("namee:",namee)
+ console.log("Age:",aage)
+ console.log("job:",job)
+
+
+let fruits=["Apple","banana","Mango"];
+let newfruits=[...fruits];
+console.log(newfruits);
+
+let arr1=[1,2,3];
+let arr2=[4,5,6];
+let arr3=[...arr1,...arr2];
+console.log(arr3);
+
+//Add element to an array using spread op
+let numberrss=[9,10,11];
+let results=[0,...numberrss,12];
+console.log(results);
+
+let studentt={
+   name:"peter",
+   age:21,
+};
+let studentt2={...studentt };
+console.log(studentt2)
+
+//Merge the object
+let personal={
+   name:"Reenaa",
+}
+let details={
+   age:21,
+   city:"Mangalore",
+};
+let userr={...personal,...details};
+console.log(userr)
+
+
+let sum=(a,b,c)=>{
+   return a+b+c;
+};
+let numm=[10,20,30];
+console.log(sum(...numm))
+
+
+let digits=[1,2,3,4,5,6];
+let [...rest]=digits
+console.log(rest);
+
+let h=10;
+//condition>="Statement 1";"statement 2"
+
+h===10? console.log("true"):
+console.log("False");
+
+
+
 
 
  
